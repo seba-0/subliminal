@@ -4,3 +4,5 @@ What changed:
  * Subliminal package is updated version 2.0.5
  * Added option to enter username and password for suppliers that have that option
  * Directory browser doesn't work you have to enter paths manually i.e. /volume1/movies
+ 
+Zipped spk can be downloaded from Release page.
