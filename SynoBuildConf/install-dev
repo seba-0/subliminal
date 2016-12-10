@@ -1,0 +1,19 @@
+# SynoBuildConf/install
+. /pkgscripts/include/pkg_util.sh
+#./INFO.sh "${DSM_SHLIB_MAJOR}.${DSM_SHLIB_MINOR}-${DSM_BUILD_NUM}"  > metadata/INFO # create INFO
+
+# prepare directory structure for your package.tgz
+
+# prepare directory structure for your package metadata and files, including INFO, scripts, PACKAGE_ICON.PNG
+if [ -d /tmp/_pkg ]; then
+        rm -rf /tmp/_pkg
+fi
+
+mkdir -p /tmp/_pkg
+cp -r metadata/* /tmp/_pkg
+pkg_make_package ./pkg/ /tmp/_pkg # create /tmp/_pkg/package.tgz
+if [ ! -d /result_spk/ ]; then
+	mkdir -p /result_spk/
+fi
+
+pkg_make_spk /tmp/_pkg  /result_spk # create /result_spk/*.spk

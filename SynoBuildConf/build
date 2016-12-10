@@ -1,0 +1,10 @@
+#!/bin/bash
+
+touch /logs/subliminal.build
+
+# if env MakeClean is set to yes clean
+case ${MakeClean} in
+	[Yy][Ee][Ss])
+	;;
+esac
+
