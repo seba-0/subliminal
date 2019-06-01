@@ -1,4 +1,4 @@
-Mod of Synocommunity Subliminal package for Synology NAS servers for DSM 6.0.2.
+Mod of Synocommunity Subliminal package for Synology NAS servers for DSM 6.0.2 or newer.
 What was changed:
  * Original package depends on Synocommunity python, this one uses python that comes with DSM, but you will need to install python modules package.
  * Subliminal package is updated version 2.0.5
